@@ -1,6 +1,5 @@
-import Head from "next/head";
-import Hero from "../components/homepage/hero";
-import FeaturedPosts from "@/components/homepage/featured-posts";
+import React from "react";
+import AllPosts from "@/components/posts/all-posts";
 
 const dummyPosts = [
 	{
@@ -32,20 +31,7 @@ const dummyPosts = [
 		image: "post-4.jpg",
 	},
 ];
-export default function HomePage() {
-	return (
-		<>
-			<Head>
-				<title>Portfolio</title>
-				<meta name="description" content="" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1"
-				/>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<Hero />
-			<FeaturedPosts posts={dummyPosts} />
-		</>
-	);
+
+export default function AllPostsPage() {
+	return <AllPosts posts={dummyPosts} />;
 }

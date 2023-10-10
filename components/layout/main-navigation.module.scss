@@ -1,0 +1,24 @@
+.container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logoLink {
+	height: 65px;
+	transition: 0.2s all ease;
+	width: 65px;
+
+	&:hover {
+		transform: rotate(360deg) scale(0.9);
+		transition: 0.2s all ease;
+	}
+}
+
+.nav {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
