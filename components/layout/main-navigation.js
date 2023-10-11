@@ -14,7 +14,10 @@ export default function MainNavigation() {
 				<nav className={classes.navContainer}>
 					<ul className={classes.nav}>
 						<li>
-							<Link href="/posts">Posts</Link>
+							<Link href="/blog">Blog</Link>
+						</li>
+						<li>
+							<Link href="/code">Code</Link>
 						</li>
 						<li>
 							<Link href="/contact">Contact</Link>

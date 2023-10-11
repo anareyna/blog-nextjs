@@ -2,8 +2,8 @@
 title: "First Gamification Assignment"
 isFeatured: false
 image: "blog/gamification.jpg"
-draft: false
 date: "2012-09-21T20:15:13-05:00"
+category: "blog"
 ---
 
 The University of Pennsylvania is offering a Gamification course through [Coursera](https://www.coursera.org/course/gamification), and this is the first assigment where I share what I’ve learned so far. Here’s the definition:

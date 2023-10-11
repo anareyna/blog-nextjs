@@ -2,6 +2,7 @@
 date: "2012-10-29T20:03:03-05:00"
 title: "Interacción Persona-Computador"
 image: "blog/hci.jpg"
+category: "blog"
 ---
 
 Este es un primer resumen de las clases del curso [“Interacción Persona-Computador”](http://www.hci-class.org/) dictada por el profesor Scott Klemmer, profesor Asociado de Ciencias de la Computación en la Universidad de Stanford.

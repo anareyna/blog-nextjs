@@ -24,7 +24,7 @@ export default function HomePage(props) {
 export function getStaticProps() {
 	return {
 		props: {
-			posts: getFeaturedPosts(),
+			posts: getFeaturedPosts("blog"),
 		},
 	};
 }

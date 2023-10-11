@@ -3,10 +3,11 @@ import classes from "./all-posts.module.scss";
 import PostsGrid from "./posts-grid";
 
 export default function AllPosts(props) {
+	const { title, posts } = props;
 	return (
 		<section className="section-container">
-			<h1>All Posts</h1>
-			<PostsGrid posts={props.posts} />
+			<h1>{title}</h1>
+			<PostsGrid posts={posts} />
 		</section>
 	);
 }

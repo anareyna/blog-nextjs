@@ -2,6 +2,7 @@
 date: "2015-02-11T16:24:01-05:00"
 title: "Automating sprite creation with Grunt"
 image: "blog/pinterest-header.jpg"
+category: "blog"
 ---
 
 > Visita este [link](http://frontendlabs.io/889--automatizar-la-creacion-de-sprites-con-grunt) para la versión en español.

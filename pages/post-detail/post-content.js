@@ -8,12 +8,12 @@ import classes from "./post-content.module.scss";
 
 export default function PostContent(props) {
 	const { post } = props;
-	const imagePath = `/images/posts/${post.image}`;
+	const imagePath = `/images/${post.image}`;
 
 	const customRenderers = {
 		// img: ({ src, alt }) => (
 		// 	<Image
-		// 		src={`/images/posts/${src}`}
+		// 		src={`/images/${src}`}
 		// 		alt={alt}
 		// 		width={600}
 		// 		height={300}
@@ -41,7 +41,7 @@ export default function PostContent(props) {
 				return (
 					<div className="post-image-block">
 						<Image
-							src={`/images/posts/${image.properties.src}`}
+							src={`/images/${image.properties.src}`}
 							alt={image.properties.alt}
 							width={600}
 							height={300}

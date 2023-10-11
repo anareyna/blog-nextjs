@@ -2,6 +2,7 @@
 date: "2014-06-23T18:15:19-05:00"
 title: "Sublime Text Packages to speed up your workflow"
 image: "blog/original-sublime.jpg"
+category: "blog"
 ---
 
 Sublime Text is one of the fastest code editors that has emerged in recent years. It has a great community that produces a lot of packages (or plugins) to speed up the development of your projects. It supports OS X, Linux and Windows platforms.
@@ -35,7 +36,7 @@ Adds improvements to files and folders of the Sublime sidebar, you will notice m
 
 #### [BracketHighligter](https://github.com/facelessuser/BracketHighlighter)
 
-The name is self explanatory, it helps a lot to identify the beginning and ending of your lines of code in a much quicker way `[]`, `()`, `{}`, `""`, `''`, `<tag></tag>`.  
+The name is self explanatory, it helps a lot to identify the beginning and ending of your lines of code in a much quicker way `[]`, `()`, `{}`, `""`, `''`, `<tag></tag>`.
 
 #### [Emmet](http://docs.emmet.io/)
 

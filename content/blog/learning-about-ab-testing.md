@@ -2,6 +2,8 @@
 date: "2015-04-06T11:32:58-05:00"
 title: "Learning about A/B Testing"
 image: "blog/ft-ab-testing.jpg"
+isFeatured: true
+category: "blog"
 ---
 
 > Escrito originalmente en español [aquí](http://frontendlabs.io/2435--que-es-ab-testing).

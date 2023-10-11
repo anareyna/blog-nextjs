@@ -5,10 +5,12 @@ export default function PostDetailsPage(props) {
 	return <PostContent post={props.post} />;
 }
 
+const subdirectory = "blog";
+
 export function getStaticProps(context) {
 	const { params } = context;
 	const { slug } = params;
-	const postData = getPostData(slug);
+	const postData = getPostData(subdirectory, slug);
 	return {
 		props: {
 			post: postData,
@@ -18,7 +20,7 @@ export function getStaticProps(context) {
 }
 
 export function getStaticPaths() {
-	const postFilenames = getPostsFiles();
+	const postFilenames = getPostsFiles(subdirectory);
 	const slugs = postFilenames.map((filename) =>
 		filename.replace(/\.md$/, "")
 	);
