@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import classes from "./post-header.module.scss";
 export default function PostHeader(props) {
 	const { image, title } = props;
 	return (
-		<header>
-			<h1>{title}</h1>
-			<Image src={image} alt={title} width={200} height={200} />
+		<header className="post-container">
+			<h1 className={classes.title}>{title}</h1>
 		</header>
 	);
 }

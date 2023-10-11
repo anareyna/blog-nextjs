@@ -1,0 +1,33 @@
+.content {
+	p,
+	ul {
+		font-size: 1.25rem;
+	}
+	p {
+		& + p {
+			margin-top: 1rem;
+		}
+	}
+
+	a {
+		border-bottom: 3px solid var(--brand-color);
+		transition: 0.1s all ease;
+		&:hover {
+			border-color: black;
+		}
+	}
+
+	ul {
+		margin: 1rem 0;
+		padding-left: 2rem;
+	}
+}
+
+.heroImage {
+	background-attachment: fixed;
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}

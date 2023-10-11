@@ -4,7 +4,7 @@ import PostsGrid from "./posts-grid";
 
 export default function AllPosts(props) {
 	return (
-		<section>
+		<section className="section-container">
 			<h1>All Posts</h1>
 			<PostsGrid posts={props.posts} />
 		</section>

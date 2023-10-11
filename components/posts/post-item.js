@@ -17,13 +17,13 @@ export default function PostItem(props) {
 	return (
 		<li className={classes.postItem}>
 			<Link href={`/posts/${slug}`} className={classes.postLink}>
-				<div className={classes.postImage}>
+				<div className={classes.postImageContainer}>
 					<Image
+						className={classes.postImage}
 						src={imagePath}
 						alt={title}
-						width={200}
-						height={200}
-						layout="responsive"
+						width={400}
+						height={400}
 					/>
 				</div>
 				<div className={classes.postInfo}>

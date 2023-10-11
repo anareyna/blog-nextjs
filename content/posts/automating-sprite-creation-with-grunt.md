@@ -12,8 +12,6 @@ Sprites can benefit page speed in several ways. First, if many small images are 
 
 This is one of [Pinterest’s](http://pinterest.com) sprites.
 
-![webapp-desktop-main-1x.356df158](http://frontendlabs.io/wp-content/uploads/2014/06/webapp-desktop-main-1x.356df158.png)
-
 Let’s imagine for a moment that we need to add a new image in the existing sprite and rearrange the others around it, we would have to recalculate positions for every class in the stylesheet…
 
 Would you like to do that task manually? I’m quite sure I wouldn’t.
@@ -23,8 +21,7 @@ Well, worry no more. Today we’re going to learn how to automate this process w
 The Grunt task we’ll be using is **grunt-spritesmith**, for the full documentation visit the Github repo [https://github.com/Ensighten/grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
 
 Now let’s set up the file structure to start creating the sprite of our project:
-
-[![Captura de pantalla 2014-06-26 a la(s) 17.29.52](http://frontendlabs.io/wp-content/uploads/2014/06/Captura-de-pantalla-2014-06-26-a-las-17.29.52.png)](http://frontendlabs.io/wp-content/uploads/2014/06/Captura-de-pantalla-2014-06-26-a-las-17.29.52.png)Inside the folder `mi-proyecto` we have `css` (where the stylesheet will be created) and the folder `img` which also contains the `sprites` folders where we’ll place all the separated images that we’ll join later on. (In order to keep this a basic tutorial we’ll only be working with .png images)
+Inside the folder `mi-proyecto` we have `css` (where the stylesheet will be created) and the folder `img` which also contains the `sprites` folders where we’ll place all the separated images that we’ll join later on. (In order to keep this a basic tutorial we’ll only be working with .png images)
 
 The content of the file `package.json` is the following:
 
@@ -67,23 +64,6 @@ npm install
 ```
 
 It should look like this so far:
-
-![Captura de pantalla 2014-06-26 a la(s) 17.19.51](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.19.51.png)
-
-Hit enter and this will create a new folder called `node_modules` with the dependencies of our project that are downloaded from the file `package.json`
-
-![Captura de pantalla 2014-06-26 a la(s) 17.21.48](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.21.48.png)
-
-Then run the task: grunt sprite  
-![Captura de pantalla 2014-06-26 a la(s) 17.22.15](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.15.png)
-
-![Captura de pantalla 2014-06-26 a la(s) 17.22.37](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.37.png)
-
-This will create the sprite file `spritesheet.png` and the stylesheet `sprites.css` in the path specified above.
-
-![Captura de pantalla 2014-06-26 a la(s) 17.23.13](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.23.13.png)
-
-![Captura de pantalla 2014-06-26 a la(s) 17.23.26](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.23.26.png)
 
 The styles and classes are ready to use in the file `sprite.css`
 
@@ -147,8 +127,6 @@ destCSS: ‘css/sprites.styl’,
 ```
 
 And we run the grunt sprite task again:
-
-![Captura de pantalla 2014-06-26 a la(s) 17.22.15](http://frontendlabs.io/wp-content/uploads/2014/07/Captura-de-pantalla-2014-06-26-a-las-17.22.15.png)
 
 This will create a set of mixins in the `sprites.styl file with all the variables needed, for example;
 
