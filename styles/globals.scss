@@ -104,6 +104,9 @@ blockquote {
 .post-image-block {
 	img {
 		display: block;
+		height: auto;
 		margin: 2rem auto;
+		max-width: 100%;
+		width: auto;
 	}
 }

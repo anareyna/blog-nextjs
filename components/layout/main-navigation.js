@@ -20,6 +20,9 @@ export default function MainNavigation() {
 							<Link href="/code">Code</Link>
 						</li>
 						<li>
+							<Link href="/design">Design</Link>
+						</li>
+						<li>
 							<Link href="/contact">Contact</Link>
 						</li>
 					</ul>
