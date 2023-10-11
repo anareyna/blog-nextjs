@@ -16,7 +16,7 @@ In simple words, an A/B Test compares two versions of a website and then determi
 
 Because we are comparing two options:
 
-![ab simple](/img/blog/ab-simple.png)
+![ab simple](blog/ab-simple.png)
 
 As we can see in the image above, we have two similar scenarios in which the variable is the button’s color and it changes from blue to red.
 
@@ -32,7 +32,7 @@ The A/B Testing also solves debates, since it avoids reaching wrong conclusions 
 
 ## Multivariate Testing
 
-![ab multiple](/img/blog/ab-multiple.png)
+![ab multiple](blog/ab-multiple.png)
 
 ## Real example of a successful case
 
@@ -42,7 +42,7 @@ The A/B Testing also solves debates, since it avoids reaching wrong conclusions 
 
 SimCity 5, one of the most popular EA games, sold 1.1 million copies in the first 2 weeks of its launch. 50% of the pre-orders where digital downloads thanks to a good A/B testing strategy.
 
-<img src="/img/blog/simcity_original.jpg" data-action="zoom">
+<img src="blog/simcity_original.jpg" data-action="zoom">
 
 In the left image we can see the **original proposal**, EA launched a promotional offer to reach more game pre-orders. The offer was displayed in a banner placed at the top of the page. However, according to the team, the promo wasn’t increasing pre-sales as expected, so they decided to test other options to see which design or layout generated more revenue.
 
