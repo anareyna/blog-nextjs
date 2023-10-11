@@ -2,6 +2,8 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import PostHeader from "./post-header";
 import Image from "next/image";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { docco } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function PostContent(props) {
 	const { post } = props;
@@ -16,6 +18,17 @@ export default function PostContent(props) {
 		// 		height={300}
 		// 	/>
 		// ),
+		code(code) {
+			const { className, children } = code;
+			const language = className ? className.split("-")[1] : "js";
+			return (
+				<SyntaxHighlighter
+					style={docco}
+					language={language}
+					children={children}
+				/>
+			);
+		},
 		p(paragraph) {
 			const { node } = paragraph;
 			if (node.children[0].tagName === "img") {
