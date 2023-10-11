@@ -1,5 +1,9 @@
 import React from "react";
-
-export default function PostsPage() {
-	return <div></div>;
+import ContactForm from "@/components/contact/contact-form";
+export default function ContactPage() {
+	return (
+		<>
+			<ContactForm />
+		</>
+	);
 }
