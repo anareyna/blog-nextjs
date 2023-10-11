@@ -4,10 +4,11 @@ import Logo from "./logo";
 import classes from "./main-navigation.module.scss";
 
 export default function MainNavigation() {
+	const logoClasses = `${classes.logoLink} no-hv`;
 	return (
 		<header className="section-container">
 			<div className={classes.container}>
-				<Link href="/" className={classes.logoLink}>
+				<Link href="/" className={logoClasses}>
 					<Logo />
 				</Link>
 				<nav className={classes.navContainer}>

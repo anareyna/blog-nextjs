@@ -12,12 +12,12 @@ export default function PostItem(props) {
 		year: "numeric",
 	});
 
-	const imagePath = `/images/posts/${slug}/${image}`;
+	const imagePath = `/images/posts/${image}`;
 
 	return (
-		<li>
-			<Link href={`/posts/${slug}`}>
-				<div>
+		<li className={classes.postItem}>
+			<Link href={`/posts/${slug}`} className={classes.postLink}>
+				<div className={classes.postImage}>
 					<Image
 						src={imagePath}
 						alt={title}
@@ -26,7 +26,7 @@ export default function PostItem(props) {
 						layout="responsive"
 					/>
 				</div>
-				<div>
+				<div className={classes.postInfo}>
 					<h3>{title}</h3>
 					<time>{formattedDate}</time>
 					<p>{excerpt}</p>
