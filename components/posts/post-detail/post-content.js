@@ -60,15 +60,6 @@ export default function PostContent(props) {
 					className={classes.heroImage}
 					style={{ backgroundImage: `url(${imagePath})` }}
 				></div>
-				{/* {post.image && (
-					<Image
-						src={imagePath}
-						alt={post.title}
-						width={1000}
-						height={500}
-						className={classes.heroImage}
-					/>
-				)} */}
 
 				<PostHeader title={post.title} image={imagePath} />
 				<div className={`${classes.content} post-container`}>
