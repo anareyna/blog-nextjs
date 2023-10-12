@@ -4,7 +4,7 @@ const uri = process.env.MONGODB_URI;
 
 export default async function handler(req, res) {
 	if (req.method === "POST") {
-		const { email, name, message } = req.body;
+		const { email, name, message, date } = req.body;
 
 		if (
 			!email ||
@@ -22,6 +22,7 @@ export default async function handler(req, res) {
 			email,
 			name,
 			message,
+			date,
 		};
 
 		let client;

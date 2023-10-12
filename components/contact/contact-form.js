@@ -43,6 +43,7 @@ export default function ContactForm() {
 				email: enteredEmail,
 				name: enteredName,
 				message: enteredMessage,
+				date: new Date().toISOString(),
 			});
 
 			setRequestStatus("success");
