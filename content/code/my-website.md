@@ -18,5 +18,6 @@ The code is developed in Next.js (ReactJS), and deployed with Vercel. The contac
 -   Javascript (ES6)
 -   CSS Modules
 -   SCSS (Styles)
+-   Markdown to JSX
 -   MongoDB
 -   Vercel
