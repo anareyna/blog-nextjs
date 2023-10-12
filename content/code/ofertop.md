@@ -9,7 +9,7 @@ category: "code"
 
 Responsive e-commerce redesign implementation from scratch for Ofertop. BEM methodology applied and also Atomic design concepts in order to work with components and keep site maintainable and scalable.
 
-### Front-end tools:
+### Front-end technologies:
 
 -   Pug (HTML preprocessor)
 -   Javascript (ES6)

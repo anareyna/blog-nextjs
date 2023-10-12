@@ -1,6 +1,6 @@
 ---
-demolink: "http://anareyna.github.io/demos/freensy/dist/"
-srclink: "https://github.com/anareyna/demos/tree/master/freensy"
+demoLink: "http://anareyna.github.io/demos/freensy/dist/"
+srcLink: "https://github.com/anareyna/demos/tree/master/freensy"
 image: "code/freensy-mockup.jpg"
 date: "2016-11-20T23:01:31-05:00"
 title: "Freensy"
@@ -14,7 +14,7 @@ category: "code"
 -   Sketch app
 -   Invision app
 
-### Front-end tools:
+### Front-end technologies:
 
 -   Gulp.js
 -   Flexbox (CSS)

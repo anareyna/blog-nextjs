@@ -9,7 +9,7 @@ category: "code"
 
 This is a redesign project for the fully responsive version of this ecommerce site.
 
-### Front-end tools:
+### Front-end technologies:
 
 -   Gulp.js
 -   Flexbox (CSS)
