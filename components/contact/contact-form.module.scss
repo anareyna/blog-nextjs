@@ -1,0 +1,30 @@
+@use "@/styles/utils/media-queries" as *;
+
+.control {
+	font-size: 1.25rem;
+	display: grid;
+	margin: 0.5rem 0;
+
+	@include media-min("sm") {
+		gap: 1rem;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	input,
+	textarea {
+		padding: 0.25rem 1rem;
+	}
+}
+
+.btn {
+	background-color: var(--brand-color);
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	transition: 0.2s all ease;
+
+	&:hover {
+		background-color: var(--txt-color);
+	}
+}

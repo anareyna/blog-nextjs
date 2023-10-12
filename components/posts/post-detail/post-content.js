@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import docco from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classes from "./post-content.module.scss";
+import PostHero from "../post-hero";
 
 export default function PostContent(props) {
 	const { post } = props;
@@ -56,10 +57,7 @@ export default function PostContent(props) {
 	return (
 		<>
 			<article>
-				<div
-					className={classes.heroImage}
-					style={{ backgroundImage: `url(${imagePath})` }}
-				></div>
+				<PostHero image={imagePath} />
 
 				<PostHeader title={post.title} image={imagePath} />
 				<div className={`${classes.content} post-container`}>

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import classes from "./post-item.module.scss";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 
 export default function PostItem(props) {
 	const { image, title, date, excerpt, slug, category } = props.post;
@@ -13,7 +13,8 @@ export default function PostItem(props) {
 		year: "numeric",
 	});
 
-	const pathname = usePathname();
+	const router = useRouter();
+	const pathname = router.pathname;
 	const formattedPathname = pathname.split("/").pop() || category;
 	const imagePath = `/images/${image}`;
 

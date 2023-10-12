@@ -28,7 +28,7 @@ export default function ContactForm() {
 			const timer = setTimeout(() => {
 				setRequestError(null);
 				setRequestStatus(null);
-			}, 30000);
+			}, 3000);
 			return () => {
 				clearTimeout(timer);
 			};
@@ -81,12 +81,11 @@ export default function ContactForm() {
 	}
 
 	return (
-		<div>
-			<h1>How can I help you?</h1>
+		<div className={classes.container}>
 			<form className={classes.form} onSubmit={sendMessageHandler}>
 				<div className={classes.controls}>
 					<div className={classes.control}>
-						<label htmlFor="email">Your Email</label>
+						<label htmlFor="email">Your Email:</label>
 						<input
 							type="email"
 							id="email"
@@ -96,7 +95,7 @@ export default function ContactForm() {
 						/>
 					</div>
 					<div className={classes.control}>
-						<label htmlFor="name">Your Name</label>
+						<label htmlFor="name">Your Name:</label>
 						<input
 							type="text"
 							id="name"
@@ -106,7 +105,7 @@ export default function ContactForm() {
 						/>
 					</div>
 					<div className={classes.control}>
-						<label htmlFor="message">Your Message</label>
+						<label htmlFor="message">Your Message:</label>
 						<textarea
 							id="message"
 							required
@@ -114,8 +113,11 @@ export default function ContactForm() {
 							onChange={(e) => setEnteredMessage(e.target.value)}
 						></textarea>
 					</div>
-					<div className={classes.actions}>
-						<button type="submit">Submit</button>
+					<div className={classes.control}>
+						<label></label>
+						<button className={classes.btn} type="submit">
+							Submit
+						</button>
 					</div>
 				</div>
 			</form>

@@ -1,13 +1,34 @@
+@use "@/styles/utils/media-queries" as *;
+$bg: rgba(248, 248, 248, 0.9);
+
+.header {
+	position: fixed;
+	top: 0;
+	transition: 0.2s all ease;
+	width: 100%;
+	z-index: 999;
+
+	&:hover {
+		background-color: $bg;
+		transition: 0.2s all ease;
+	}
+}
 .container {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	padding: 0.5rem 0;
 }
 
 .logoLink {
-	height: 65px;
+	height: 45px;
 	transition: 0.2s all ease;
-	width: 65px;
+	width: 45px;
+
+	@include media-min("sm") {
+		height: 60px;
+		width: 60px;
+	}
 
 	&:hover {
 		transform: rotate(360deg) scale(0.9);
@@ -17,8 +38,30 @@
 
 .nav {
 	display: flex;
-	gap: 1rem;
+	font-size: 1rem;
+	gap: 0.25rem;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	@include media-min("sm") {
+		font-size: 1.25rem;
+
+		gap: 1.5rem;
+	}
+}
+
+.itemLink {
+	background-color: $bg;
+	border-radius: var(--border-radius);
+	padding: 0.5rem 0.75rem;
+
+	&:hover {
+		background-color: var(--brand-color);
+		color: white;
+	}
+}
+.isActive {
+	background-color: var(--brand-color);
+	color: white;
 }
