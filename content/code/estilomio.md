@@ -1,6 +1,6 @@
 ---
-demolink: "http://anareyna.github.io/demos/estilomio/dist/"
-srclink: "https://github.com/anareyna/demos/tree/master/estilomio"
+demoLink: "http://anareyna.github.io/demos/estilomio/dist/"
+srcLink: "https://github.com/anareyna/demos/tree/master/estilomio"
 image: "code/estilomio-mockup.jpg"
 date: "2016-04-10T23:01:31-05:00"
 title: "Estilomio"

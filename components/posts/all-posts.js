@@ -6,7 +6,7 @@ export default function AllPosts(props) {
 	const { title, posts } = props;
 	return (
 		<section className="section-container">
-			<h1>{title}</h1>
+			<h1 className={classes.title}>{title}</h1>
 			<PostsGrid posts={posts} />
 		</section>
 	);

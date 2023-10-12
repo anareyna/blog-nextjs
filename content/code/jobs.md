@@ -1,6 +1,6 @@
 ---
-demolink: "http://anareyna.github.io/demos/jobs/dist/"
-srclink: "https://github.com/anareyna/demos/tree/master/jobs"
+demoLink: "http://anareyna.github.io/demos/jobs/dist/"
+srcLink: "https://github.com/anareyna/demos/tree/master/jobs"
 image: "code/jobs-mockup.jpg"
 date: "2015-10-30T23:01:31-05:00"
 title: "Jobs"

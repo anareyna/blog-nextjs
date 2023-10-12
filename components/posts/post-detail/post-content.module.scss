@@ -1,4 +1,5 @@
 .content {
+	padding-bottom: 5rem;
 	p,
 	ul {
 		font-size: 1.25rem;
@@ -20,5 +21,32 @@
 	ul {
 		margin: 1rem 0;
 		padding-left: 2rem;
+	}
+}
+
+.date {
+	color: #797979;
+	margin-top: 0;
+	font-size: 1rem;
+}
+
+.postProjectLinks {
+	padding: 2rem 0;
+	text-align: center;
+	a {
+		font-size: 1.25rem;
+		margin: 0 2rem;
+
+		&:before {
+			content: "[";
+		}
+
+		&::after {
+			content: "]";
+		}
+
+		span {
+			padding: 0 0.5rem;
+		}
 	}
 }

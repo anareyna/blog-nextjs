@@ -1,3 +1,17 @@
+.postLink {
+	border-bottom: 3px solid white;
+	border-radius: var(--border-radius);
+	display: block;
+	overflow: hidden;
+	transition: 0.2s all ease;
+
+	&:hover {
+		border-bottom: 3px solid var(--brand-color);
+		transition: 0.2s all ease;
+		transform: scale(1.05);
+	}
+}
+
 .postInfo {
 	background-color: white;
 	padding: 1rem;

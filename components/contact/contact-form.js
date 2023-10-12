@@ -116,7 +116,7 @@ export default function ContactForm() {
 					<div className={classes.control}>
 						<label></label>
 						<button className={classes.btn} type="submit">
-							Submit
+							Send message
 						</button>
 					</div>
 				</div>

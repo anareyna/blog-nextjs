@@ -8,6 +8,8 @@
 	--border-radius: 8px;
 	--font-headings: Oleo Script, Crimson Text, Arial, sans-serif;
 	--font-body: Inconsolata, Arial, sans-serif;
+	--header-height-desktop: 76px;
+	--header-height-mobile: 61px;
 
 	--brand-color: #cd2026;
 	--txt-color: #464646;
@@ -25,10 +27,10 @@ body {
 	background: var(--background-color);
 	font-family: var(--font-body);
 	line-height: 1.5;
-	padding-top: 61px;
+	padding-top: var(--header-height-mobile);
 
 	@include media-min("sm") {
-		padding-top: 76px;
+		padding-top: var(--header-height-desktop);
 	}
 }
 

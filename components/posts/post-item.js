@@ -3,15 +3,13 @@ import Link from "next/link";
 import classes from "./post-item.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { formatDate } from "@/lib/general-utils";
 
 export default function PostItem(props) {
-	const { image, title, date, excerpt, slug, category } = props.post;
+	const { image, title, date, excerpt, slug, category, demoLink, srcLink } =
+		props.post;
 
-	const formattedDate = new Date(date).toLocaleDateString("en-US", {
-		day: "numeric",
-		month: "long",
-		year: "numeric",
-	});
+	const formattedDate = formatDate(date);
 
 	const router = useRouter();
 	const pathname = router.pathname;

@@ -6,10 +6,13 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import docco from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classes from "./post-content.module.scss";
 import PostHero from "../post-hero";
+import { formatDate } from "@/lib/general-utils";
 
 export default function PostContent(props) {
 	const { post } = props;
 	const imagePath = `/images/${post.image}`;
+	const hasLinksSection = post.srcLink || post.demoLink;
+	const formattedDate = formatDate(post.date);
 
 	const customRenderers = {
 		// img: ({ src, alt }) => (
@@ -61,6 +64,34 @@ export default function PostContent(props) {
 
 				<PostHeader title={post.title} image={imagePath} />
 				<div className={`${classes.content} post-container`}>
+					{post.date && (
+						<p className={classes.date}>
+							Posted on {formattedDate}
+						</p>
+					)}
+					{hasLinksSection && (
+						<div className={classes.postProjectLinks}>
+							{post.demoLink && (
+								<a
+									target="_blank"
+									href={post.demoLink}
+									rel="noreferrer"
+								>
+									<span>View demo</span>
+								</a>
+							)}
+
+							{post.srcLink && (
+								<a
+									target="_blank"
+									href={post.srcLink}
+									rel="noreferrer"
+								>
+									<span>View source code</span>
+								</a>
+							)}
+						</div>
+					)}
 					<ReactMarkdown components={customRenderers}>
 						{post.content}
 					</ReactMarkdown>
