@@ -1,6 +1,7 @@
 import { MongoClient } from "mongodb";
 
-const uri = process.env.MONGODB_URI;
+const URI = process.env.MONGODB_URI;
+const DB_COLLECTION = process.env.DB_COLLECTION;
 
 export default async function handler(req, res) {
 	if (req.method === "POST") {
@@ -27,14 +28,16 @@ export default async function handler(req, res) {
 
 		let client;
 		try {
-			client = await MongoClient.connect(uri);
+			client = await MongoClient.connect(URI);
 		} catch (error) {
 			res.status(500).json({ message: "Something went wrong." });
 			return;
 		}
 		const db = client.db("blog_db");
 		try {
-			const result = await db.collection("contact").insertOne(newMessage);
+			const result = await db
+				.collection(DB_COLLECTION)
+				.insertOne(newMessage);
 			newMessage.id = result.insertedId;
 		} catch (error) {
 			client.close();
