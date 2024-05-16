@@ -99,6 +99,10 @@ blockquote {
 	@include media-min("sm") {
 		margin: auto;
 	}
+
+	ul {
+		list-style: disc;
+	}
 }
 
 .code-no-language {
