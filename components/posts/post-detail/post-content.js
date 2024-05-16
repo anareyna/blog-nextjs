@@ -7,6 +7,7 @@ import docco from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classes from "./post-content.module.scss";
 import PostHero from "../post-hero";
 import { formatDate } from "@/lib/general-utils";
+import YoutubeEmbed from "@/components/youtube-embed/youtube-embed";
 
 export default function PostContent(props) {
 	const { post } = props;
@@ -77,7 +78,7 @@ export default function PostContent(props) {
 									href={post.demoLink}
 									rel="noreferrer"
 								>
-									<span>View demo</span>
+									<span>Go to demo</span>
 								</a>
 							)}
 
@@ -95,6 +96,13 @@ export default function PostContent(props) {
 					<ReactMarkdown components={customRenderers}>
 						{post.content}
 					</ReactMarkdown>
+
+					{post.youtubeId && (
+						<>
+							<h3>Watch demo video:</h3>
+							<YoutubeEmbed embedId={post.youtubeId} />
+						</>
+					)}
 				</div>
 			</article>
 		</>
